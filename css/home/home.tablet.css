@@ -62,10 +62,16 @@
         flex-wrap: wrap;
         width:100%;
     }
-
+    .our-portfolio-item {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+        justify-content: center;
+    }
 
     .footer {
-        padding: 100px;
+        padding: 0;
     }
 
     .footer-text-container {
@@ -74,13 +80,16 @@
     }
 
     .footer-container {
-        padding: 96px 16px;
+        padding: 96px 108px;
         display: block;
     }
 
     .footer-container-logo {
         align-items: center;
         margin-right: 0px;
+        display: flex;
+        margin-bottom: 72px;
+        gap: 24px;
     }
 
     .footer-alt {
@@ -90,11 +99,10 @@
 
     .footer-form {
         display: flex;
-        flex-direction: column;
     }
 
     .footer-form-text {
-        text-align: center;
+        text-align:unset;
     }
 
     .footer-container-social {

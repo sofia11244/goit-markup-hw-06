@@ -43,7 +43,13 @@
         flex-direction: column;
         align-items: center;
     }
-
+    .our-portfolio-item{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+        justify-content: center;
+    }
 
     .footer{
         padding:100px;

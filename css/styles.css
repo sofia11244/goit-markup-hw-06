@@ -511,13 +511,14 @@ h3 {
     background-color:#2E2F42;
     color:#ffffff;
     padding: 100px 0;
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
 }
 
 .footer-container{
     align-items:baseline;
     display: flex;
-    justify-content: space-between;
     width: 1158px;
     margin: 0 auto;
 }
