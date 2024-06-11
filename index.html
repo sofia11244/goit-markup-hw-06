@@ -20,8 +20,28 @@
     <link rel="stylesheet" href="./css/home/home.desktop.css">
     <link rel="stylesheet" href="./css/home/home.mobile.css">
     <link rel="stylesheet" href="./css/home/home.tablet.css">
-
-
+<!--JS-HAMBURGER-MENU-->
+        <script>
+            function closeNav() {
+                var x = document.getElementById("hamburger-menu-script");
+                if (x.style.display === "flex") {
+                    x.style.display = "none";
+                }
+                else {
+                    x.style.display = "flex";
+                }
+            }
+            function closeModal() {
+                var y = document.getElementById("model-dialog-formbox");
+                if (y.style.display === "flex") {
+                    y.style.display = "none";
+                }
+                else {
+                    y.style.display = "flex";
+                }
+            }
+        </script>
+<!--END-OF-JS-HAMBURGER-MENU-->
 </head>
 
 <body>
@@ -33,26 +53,62 @@
 
                 <ul class="nav-list">
                     <li class="alt-nav">
-                        <a class="nav-item studio" href="./index.html">Studio</a>
-                    </li>
-
+                        <a class="hamburger-menu-nav" href="">Studio</a></li>
                     <li class="alt-nav">
-                        <a class="nav-item" href="./index.html">Portfolio</a>
-                    </li>
-
+                        <a class="hamburger-menu-nav" href="">Portfolio</a></li>
                     <li class="alt-nav">
-                        <a class="nav-item" href="./index.html">Contacts</a>
-                    </li>
-
+                        <a class="hamburger-menu-nav" href="">Contacts</a></li>
                 </ul>
             </nav>
-
-            <address class="address">
-                <ul class="alt-address">
-                    <li><a class="alt-address-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="alt-address-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-                </ul>
-            </address>
+            <div class="hamburger-menu">
+                <div class="hamburger-menu-icon">
+                    <svg width="24" height="24" class="menu-icon">
+                        <use href="./images/symbol-defs.svg#icon-menu-icon"></use>
+                    </svg>
+                </div>
+                <address class="address">
+                    <ul class="alt-address">
+                        <li><a class="alt-address-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="alt-address-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+                <div class="mobil-menu">
+                    <!--BUTTON FOR MENU-->
+                    <a href="javascript:void(0)" class="barbtn" onclick="closeNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <!--CONTENT-->
+                    <div class="hamburger" id="hamburger-menu-script">
+                        <!--BUTTON TO OPEN NAVIGATION-->
+                        <button class="hamburger-close-button" type="button" onclick="closeNav()">
+                            <svg width="8" height="8" class="modal-menu-button-icon">
+                                <use class="modal-menu-button-icon-alt" href="./images/exit-icon.svg#icon-exit-button"> </use>
+                            </svg>
+                        </button>
+                        <div>
+                            <a class="hamburger-menu-nav" href="">Studio</a>
+                            <a class="hamburger-menu-nav" href="">Portfolio</a>
+                            <a class="hamburger-menu-nav" href="">Contacts</a>
+                        </div>
+                        <div class="hamburger-adress-socials">
+                            <address class="address">
+                                <ul class="mobile-nav-address-list">
+                                    <li><a class="hamburger-adress-list" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                                    <li><a class="hamburger-adress-list" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                                </ul>
+                            </address>
+                            <div class="hamburger-menu-social-media">
+                                <ul class="hamburger-social-media-alt">
+                                    <li class="hamburger-social-media-list"><a class="hamburger-social-media-link" href=""><svg class="icon hamburger-socials-icon" width="24" height="24"><use href="./images/icons.svg#icon-instagram"></use></svg></a></li>
+                                    <li class="hamburger-social-media-list"><a class="hamburger-social-media-link" href=""><svg class="icon hamburger-socials-icon" width="24" height="24"><use href="./images/icons.svg#icon-twitter"></use></svg> </a></li>
+                                    <li class="hamburger-social-media-list"><a class="hamburger-social-media-link" href=""><svg class="icon hamburger-socials-icon" width="24" height="24"><use href="./images/icons.svg#icon-facebook"></use></svg> </a></li>
+                                    <li class="hamburger-social-media-list"><a class="hamburger-social-media-link" href=""><svg class="icon hamburger-socials-icon" width="24" height="24"><use href="./images/icons.svg#icon-linkedin"></use></svg> </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -405,7 +461,7 @@
         <div class="footer-container container">
             <div class="footer-container-logo">
                 <div class="footer-text-container">
-                    <a class="footer-alt" href="./index.html">
+                    <a class="footer-alhamburger-menu-nav.html">
                     Web<span class="footer-logo">Studio</span>
                     </a>
                     <p class="footer-text">
@@ -462,9 +518,9 @@
             </div>
         </div>
     </footer>
-    <div class="container modal-menu-container">
+    <div class="container modal-menu-container" id="model-dialog-formbox">
         <div class="modal-menu">
-            <button class="modal-menu-button" type="button">
+            <button class="modal-menu-button" type="button" onclick="closeModal()">
                 <svg width="8" height="8" class="modal-menu-button-icon">
                     <use class="modal-menu-button-icon-alt" href="./images/exit-icon.svg#icon-exit-button"> </use>
                 </svg>
@@ -521,3 +577,5 @@
 </body>
 
 </html>
+
+

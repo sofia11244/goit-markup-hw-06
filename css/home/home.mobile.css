@@ -1,4 +1,4 @@
-@media screen and (min-width:390px) and (max-width:767px) {
+@media screen and (max-width:767px) {
     .modal-menu-container {
             display: none;
     }
@@ -6,6 +6,9 @@
     .alt-address{
         display:none;
     }
+    
+    
+
     .second-section-list-icon{
         display:none;
     }
