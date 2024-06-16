@@ -1,5 +1,8 @@
-@media screen and (min-width:1158px){
-        .hamburger-menu-icon {
-                display: none;
-            }
-}
+@media screen and (min-width:1159px) and (max-width:2500px){
+        .hamburger-menu-icon{
+                        display: none;
+                }
+        .hamburger{
+                display:none;
+        }
+        }
