@@ -62,11 +62,7 @@
                 </ul>
             </nav>
             <div class="hamburger-menu">
-                <div class="hamburger-menu-icon">
-                    <svg width="24" height="24" class="menu-icon">
-                        <use href="./images/symbol-defs.svg#icon-menu-icon"></use>
-                    </svg>
-                </div>
+                
                 <address class="address">
                     <ul class="alt-address">
                         <li><a class="alt-address-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -76,7 +72,11 @@
                 <div class="mobil-menu">
                     <!--BUTTON FOR MENU-->
                     <a href="javascript:void(0)" class="barbtn" onclick="closeNav()">
-                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-bars"></i><div class="hamburger-menu-icon">
+                            <svg width="24" height="24" class="menu-icon">
+                                <use href="./images/symbol-defs.svg#icon-menu-icon"></use>
+                            </svg>
+                        </div>
                     </a>
                     <!--CONTENT-->
                     <div class="hamburger" id="hamburger-menu">

@@ -135,6 +135,7 @@ body{
     align-items: center;
     gap: 40px;
     display: flex;
+    text-decoration: none;
 }
 
 ul{
