@@ -24,23 +24,23 @@
 <!--JS-HAMBURGER-MENU-->
         <script>
             function closeNav() {
-                var x = document.getElementById("hamburger-menu-script");
-                if (x.style.display === "flex") {
-                    x.style.display = "none";
-                }
-                else {
-                    x.style.display = "flex";
-                }
+            var x = document.getElementById("hamburger-menu");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } 
+            else {
+                x.style.display = "flex";
+            }
             }
             function closeModal() {
-                var y = document.getElementById("model-dialog-formbox");
-                if (y.style.display === "flex") {
-                    y.style.display = "none";
-                }
-                else {
-                    y.style.display = "flex";
-                }
+            var y = document.getElementById("model-dialog-formbox");
+            if (y.style.display === "flex") {
+                y.style.display = "none";
+            } 
+            else {
+                y.style.display = "flex";
             }
+        }
         </script>
 <!--END-OF-JS-HAMBURGER-MENU-->
 </head>
@@ -79,10 +79,10 @@
                         <i class="fa fa-bars"></i>
                     </a>
                     <!--CONTENT-->
-                    <div class="hamburger" id="hamburger-menu-script">
+                    <div class="hamburger" id="hamburger-menu">
                         <!--BUTTON TO OPEN NAVIGATION-->
                         <button class="hamburger-close-button" type="button" onclick="closeNav()">
-                            <svg class="" width="8" height="8" class="modal-menu-button-icon">
+                            <svg class="modal-close-cross hamburger-closebtn" width="24" height="24">
                                 <use class="modal-menu-button-icon-alt" href="./images/exit-icon.svg#icon-exit-button"> </use>
                             </svg>
                         </button>
